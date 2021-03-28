@@ -7,7 +7,8 @@ module.exports = {
 		'plugin:vue/essential',
 		'@vue/airbnb',
 		'plugin:prettier/recommended',
-		'prettier/vue',
+		'prettier',
+		'eslint-config-prettier',
 	],
 	parserOptions: {
 		parser: 'babel-eslint',
@@ -19,5 +20,11 @@ module.exports = {
 		'no-alert': 'off',
 		'no-plusplus': 'off',
 		'prefer-destructuring': 'off',
+		'prettier/prettier': [
+			'error',
+			{
+				endOfLine: 'auto',
+			},
+		],
 	},
 };
